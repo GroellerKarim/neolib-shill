@@ -4,19 +4,20 @@
 
 <template>
   <div class="navbar">
+
+    <div class="logo">logo</div>
+
     <div class="buttongroup">
       <button class="navigationButton">Home</button>
       <button class="navigationButton">Our Vision</button>
       <button class="navigationButton">Test</button>
     </div>
+
+    <div></div>
   </div>
 </template>
 
 <style scoped>
-
-.logo {
-
-}
 
 .navbar {
   background: #159957; /* fallback for old browsers */
@@ -26,7 +27,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   position: absolute;
   left: 0;
@@ -57,8 +58,10 @@
 
 }
 .navigationButton:hover::after {
-  // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
+  /*
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  */
+  transform-origin: bottom left;
   transform: scale(1);
 }
 
@@ -72,6 +75,7 @@
   left: 0;
   background-color: white;
   transition: transform 0.25s ease-out;
+  -webkit-transform-origin: bottom right;
 }
 
 
