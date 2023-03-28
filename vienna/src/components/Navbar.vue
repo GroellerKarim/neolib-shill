@@ -1,11 +1,9 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="navbar">
 
-    <div class="logo">logo</div>
+    <div class="logo"></div>
 
     <div class="buttongroup">
       <button class="navigationButton">Home</button>
@@ -38,15 +36,15 @@
   height: 10%;
 }
 
+.buttongroup {
+  justify-content: center;
+}
+
 .navigationButton {
   transition-duration: 0.2s;
   margin: 12px;
-  font-size: 16px;
+  font-size: 20px;
 
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 6px;
-  padding-right: 6px;
 
   position: relative;
 
